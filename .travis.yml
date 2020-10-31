@@ -16,7 +16,7 @@ after_success:
   #Log in to the docker CLI
   #this help to login into the docker with one step which is actually two steps that asking for your username and password.
   # echo "$DOCKER_PASSWORD" is to retrieve from the the environment variable.
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWOR" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub.
   
   - docker push fredjackyong97/multi-client
